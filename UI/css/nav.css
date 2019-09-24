@@ -12,7 +12,7 @@
 
   nav{
     height: 10vh;
-    background-color: #2ECC71;
+    background-color: rgb(12, 151, 70);
   }
   .nav-links{
     display: flex;
@@ -23,6 +23,10 @@
     align-items: center;
     margin-left: auto;
 
+  }
+  .nav-links a:hover{
+    color: black;
+    text-transform: uppercase;
   }
 
   .nav-links a {
@@ -41,8 +45,8 @@
     height: 45vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -30%);
-    -webkit-clip-path:circle(100px at 90% -30%);
+    clip-path: circle(100px at 90% -40%);
+    -webkit-clip-path:circle(100px at 90% -40%);
     transition: all 1s ease-out;
     pointer-events: none;
     z-index: 1;
@@ -60,6 +64,7 @@
     background: white;
     margin: 5px;
   }
+
   .hamburger{
     position: absolute;
     cursor: pointer;
@@ -68,6 +73,8 @@
     transform: translate(-5%,-50%);
     z-index: 2;
   }
+
+
   .nav-links li {
     opacity: 0;
   }

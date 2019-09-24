@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:  Calibri; 
+}
+
+body{
+    line-height: 1.4;
+}
+
+.form{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.image{
+    background-image: url(../assets/connect\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 105%;
+    width: 100%;
+    background-blend-mode: luminosity;
+}
+
+.image h1{
+    margin-left:5px; 
+    margin-top: 60%;
+    height: 200px;
+    width: 98%;
+    background-color: white;
+}
+
+.image b {
+    margin-left:100px; 
+}
+
+.information{
+	padding: 15px;
+}
+
+ .info{
+	grid-area: info;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--light);
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.info form {
+    padding: 40px;
+}
+
+.info h1{
+    background-color: rgb(12, 151, 70);
+    border-radius: 15px 15px 0 0 ;
+    padding: 20px;
+    color: white;
+}
+
+.fillbox {
+	width: 90%;
+	border: 2px solid var(--dark);
+	border-radius: 3px;
+	padding: 5px;
+	background-color: white;
+	height: 30px;
+}
+
+.fillbox:hover{
+	 padding: 10px;
+	 border: 1px solid grey;
+     
+}
+
+ .small{
+	 width: 20px;
+ }
+
+.submitt {
+
+    padding: 12px;
+	border: 1px solid var(--dark);
+	border-radius: 5px;
+	background-color: var(--primary);
+    cursor: pointer;
+    color: white;
+	width: 30%;
+}
+.submitt:hover{
+    background-color: white;
+	color: black;
+	border: 1px solid black;
+   
+}
+
+.biography{
+	border: 1px solid grey;
+	border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+	background-color: white;
+	width: 90%;
+	height: 100px;
+    word-break: break-all;
+
+}
+
+@media(max-width:700px){
+    body{
+        font-size: 14px;
+    }
+    	
+      
+    .form{
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 1fr;
+        
+    }
+    .information{
+        padding: 0px;
+    }
+    
+     .info{
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--light);
+        width: 100%;
+        font-size: 18px;
+        box-shadow: 0 0 0 0;       
+    }
+    
+    .image{
+            display: none;
+        }
+    
+    }
+    
+
+
+
