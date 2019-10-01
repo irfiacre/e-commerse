@@ -1,0 +1,178 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:  Calibri; 
+}
+
+body{
+    line-height: 1.4;
+    background-color:whitesmoke;
+}
+section{
+    margin-top: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2,1fr)
+}
+
+
+.product{
+    background-image: url(../assets/apple.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+    width: 98%;
+    height: 70%;
+    border-bottom: 5px solid white;
+    box-shadow:  rgba(0,0,0,0.2) 0 4px 8px 0,  rgba(0,0,0,0.19) 10px 6px 20px 0;
+}
+
+.mode{
+    padding: 20px;
+    background-color: white;
+}
+.mode h1{
+    border-bottom:gray solid 2px;
+    font-size: 28px;
+    width: 50%;
+    margin: 1%;
+    
+}
+.mode h5{
+    background-color: rgb(12, 151, 70);
+    border : 3px solid rgb(12, 151, 70);
+    border-radius: 5px;
+    font-size: 28px;
+    color: aliceblue;
+    width: 50%;
+    padding: 2%;
+    margin: 10px;
+    box-shadow:  rgba(0,0,0,0.2) 0 4px 8px 0,  rgba(0,0,0,0.19) 10px 6px 20px 0;
+    
+}
+
+#menu th{
+    padding: 3%;
+    margin: 10px;
+    
+}
+#menu td{
+    display:inline-block; 
+    padding: 20px;
+    margin-left: 50px;
+    
+}
+#menu{
+    border-bottom:2px solid black;
+}
+
+table th{
+    padding: 3%;
+    margin: 10px;
+}
+
+table td{
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.button input{
+ margin: 2px;
+ cursor: pointer;
+ color:whitesmoke;
+ border: rgb(39, 175, 96);
+ border-radius: 2px;
+ padding: 15px;
+ background-color: rgb(39, 175, 96);
+ font-size: 16px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.button input:hover{
+    box-shadow:  rgba(158, 157, 157, 0.993) 0 4px 8px 0,  rgba(24, 23, 23, 0.19) 10px 6px 20px 0;
+    padding: 16px;
+}
+
+@media (max-width: 870px){
+    
+section{
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 1fr; 
+}
+.product{
+    position: absolute;
+    grid-area: product;
+    width: 98%;
+    height: 45%;
+    box-shadow: 0 0 0 0;
+}
+
+.mode{
+    grid-area: mode;
+    margin-top: 710px;
+
+}
+
+}
+@media (max-width: 500px){
+  
+    .product{
+        position: absolute;
+        grid-area: product;
+        width: 98%;
+        height: 25%;
+    }
+    
+    .mode{
+        grid-area: mode;
+        margin-top: 280px;
+        padding: 3px; 
+    }
+    
+.mode h1{
+    border-bottom:gray solid 2px;
+    font-size: 20px;
+    width: 50%;
+    margin: 1%;
+    
+}
+.mode h5{
+    font-size: 18px;
+    padding: 1%;
+    margin: 5px;
+}
+
+#menu th{
+    padding: 1.5%;
+    margin: 5px;
+    font-size: 14px;
+}
+#menu td{
+    padding: 9px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+table th{
+    padding: 1.5%;
+    margin: 5px;
+}
+
+table td{
+    padding: 9px;
+    margin-left: 5px;
+}
+
+.button input{
+ margin: 2px;
+ padding: 10px;
+}
+
+
+}
