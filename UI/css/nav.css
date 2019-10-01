@@ -9,6 +9,10 @@
     font-family: sans-serif;
     opacity: 1;
   }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
   nav{
     height: 10vh;
@@ -27,6 +31,7 @@
   .nav-links a:hover{
     color: black;
     text-transform: uppercase;
+    font-size: 15px;
   }
 
   .nav-links a {
@@ -35,9 +40,32 @@
     font-size: 18px;
   }
 
+  .logo{
+    position: absolute;
+    color: white;
+    margin-top: 23px;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 25px;
+  }
+
+  #userProfile{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  #userProfile:hover{
+    border: 4px solid white;
+  }
+
 @media screen and (max-width:700px){
   nav{
     position: relative;
+  }
+  .logo{
+    font-size: 18px;
+    margin-left: 5px;
   }
   .nav-links{
     position: absolute;
@@ -103,5 +131,12 @@
   }
 
 
+}
+
+@media screen and (max-width:400px){
+  .logo{
+    font-size: 14px;
+    margin-left: 5px;
+  }
 }
 

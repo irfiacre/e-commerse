@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:  Calibri; 
+}
+
+body{
+    line-height: 1.4;
+    background-color:whitesmoke;
+}
+.productsContainer{
+    display: grid;
+    grid-gap: 10px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    height: 100%;
+
+}
+
+#product1{
+    background-image: url(../assets/nadine-shaabana-iCxPxfBlvlg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+#product2{
+    background-image: url(../assets/apple.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#product3{
+    background-image: url(../assets/watch.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+#product4{
+    background-image: url(../assets/joystick.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+#product5{
+    background-image: url(../assets/ps.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+#product6{
+    background-image: url(../assets/ptv.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+ .product{
+    height: 330px;
+    margin: 10px;
+    box-shadow:  rgba(0,0,0,0.2) 0 4px 8px 0,  rgba(0,0,0,0.19) 10px 6px 20px 0;
+    cursor: pointer;
+}
+
+.product p{
+    background-color: white;
+    opacity: 1;
+    margin-top:244px;
+    height: 86px;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+}
+.product p:hover{
+    background-color: white;
+    opacity: 0.9;
+    height: 105px;
+    margin-top:225px;
+}
+
+@media screen and (max-width:800px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        height: 100%;
+    } 
+
+}
+
+@media screen and (max-width:520px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        height: 100%;
+    } 
+    .product{
+        height: 330px;
+        margin: 0px;
+        margin-top: 10px;
+        box-shadow:  rgba(0,0,0,0.2) 0 4px 8px 0,  rgba(0,0,0,0.19) 10px 6px 20px 0;
+        cursor: pointer;
+    }
+
+}
