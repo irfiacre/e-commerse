@@ -5,13 +5,10 @@
     box-sizing: border-box;
 }
 
-html{
-    font-family:  Calibri; 
-}
-
 body{
     line-height: 1.4;
     background-color:whitesmoke;
+    font-family: sans-serif;
 }
 section{
     margin-top: 10px;
@@ -40,7 +37,8 @@ section{
     border-bottom:gray solid 2px;
     font-size: 28px;
     width: 50%;
-    margin: 1%;
+    margin: 1%;    
+    font-weight: 500;
     
 }
 .mode h5{
@@ -49,6 +47,7 @@ section{
     border-radius: 5px;
     font-size: 28px;
     color: aliceblue;
+    font-weight: 100;
     width: 50%;
     padding: 2%;
     margin: 10px;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="UI/css/style.css">
     <link rel="stylesheet" href="UI/css/nav.css">
     <link rel="stylesheet" href="UI/css/footer.css">
+    <link rel="stylesheet" href="UI/css/moodle.css">
 </head>
 <body>
   <div class="all">
@@ -22,12 +23,33 @@
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">sign in</a></li>
+                <li><a  id="click" >sign in</a></li>
                 <li><a href="UI/html/signup.html">sign up</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">contact</a></li>
             </ul>
         </nav>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2> SIGN IN </h2>
+          </div>
+        
+          <div class="modal-body">
+                <form method="post"  class="">
+                    
+                    <input type="email" class="textbox" name="email" id="email" placeholder="Enter email" required ><br><br>
+                    <input type="password" name="password" class="textbox" id="password"  placeholder="Enter Password" required><br><br>
+                        
+                    
+                        <input type="submit" name="btn1" id="btn1" value="SIGN IN" onclick="validateUser(this.form)" />
+                    
+                    
+                </form>
+               </div>
+            </div>
     </div>
     <div class="container">
 
@@ -90,5 +112,6 @@
     </div>  
 
    <script src="UI/js/nav.js"></script> 
+   <script src="UI/js/moodle.js"></script> 
 </body>
 </html>

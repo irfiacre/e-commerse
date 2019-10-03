@@ -39,6 +39,9 @@
     text-decoration: none;
     font-size: 18px;
   }
+  #click{
+    cursor: pointer;
+  }
 
   .logo{
     position: absolute;

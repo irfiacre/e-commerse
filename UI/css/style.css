@@ -13,11 +13,7 @@
   body {
     line-height: 1.4;
   }
-  a{
-    text-decoration: none;
-    font-size: 18px;
-    color: black;
-  }
+ 
   .all{
     padding: 4px;
   }
@@ -39,14 +35,16 @@
   .words{
     margin-top: -350px;
     margin-left: 5%;
-    z-index: 2;
+    /* z-index: 2; */
   }
+
   h1{
     font-size: 72px;
     font-family: 'Times New Roman', Times, serif; 
     color: white;
     letter-spacing: 3px;
   }
+
    h4{
     font-size: 24px; 
     letter-spacing: 1.5px;
@@ -115,7 +113,7 @@
   .words{
     margin-top: -350px;
     margin-left: 3%;
-    z-index: 2;
+    /* z-index: 1; */
     width: 98%;
   }
   h1{
